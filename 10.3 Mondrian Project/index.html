@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /*
+      Write your CSS here
+      Gap Colour: #000
+      White: #F0F1EC
+      Red: #E72F24
+      Black: #232629
+      Blue: #004592
+      Yellow: #F9D01E
+
+      For dimensions, see dimensions.png image.
+      HINT: Remember you can't change the properties of grid lines.
+      But grid lines are transparent!
+      */
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: grid;
+        background-color: #000;
+        height: 748px;
+        width: 748px;
+        gap: 9px;
+      }
+
+      .row1 {
+        display: grid;
+        grid-template-columns: 320px 419px;
+        grid-template-rows: 424px;
+        gap: 9px;
+      }
+
+      .red {
+        background-color: #e72f24;
+      }
+
+      .row1white {
+        background-color: #f0f1ec;
+      }
+
+      .row2 {
+        display: grid;
+        grid-template-columns: 320px 369px 41px;
+        grid-template-rows: 286px 20px;
+        gap: 9px;
+      }
+
+      .row2col1 {
+        background-color: #f0f1ec;
+        grid-area: 1 / 1 / 1 / 1;
+      }
+
+      .row2col2 {
+        grid-area: 1 / 2 / 2 / 3;
+        background-color: #f0f1ec;
+      }
+
+      .row2col3 {
+        grid-area: 2 / 1 / 2 / 1;
+        background-color: #f0f1ec;
+      }
+
+      .row2col4 {
+        grid-area: 2 / 2 / 3 / 3;
+        background-color: #000;
+        display: grid;
+        grid-template-columns: 1fr 153px;
+        gap: 9px;
+      }
+
+      .row2col4yellow {
+        background-color: #f9d01e;
+      }
+
+      .row2col4blue {
+        background-color: #232629;
+      }
+
+      .row2col5 {
+        grid-area: 1 / 3 / 3 / 3;
+        display: grid;
+        grid-template-rows: 130px 175px;
+        gap: 10px;
+      }
+
+      .row2col5blue {
+        background-color: #004592;
+      }
+
+      .row2col5white {
+        background-color: #f0f1ec;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="container">
+      <div class="row1">
+        <div class="red"></div>
+        <div class="row1white"></div>
+      </div>
+      <div class="row2">
+        <div class="row2col1"></div>
+        <div class="row2col2"></div>
+        <div class="row2col3"></div>
+        <div class="row2col4">
+          <div class="row2col4yellow"></div>
+          <div class="row2col4blue"></div>
+        </div>
+        <div class="row2col5">
+          <div class="row2col5blue"></div>
+          <div class="row2col5white"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
